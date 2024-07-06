@@ -1,0 +1,130 @@
+html{
+    background: linear-gradient(#e66465, #9198e5);
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding-left: 35%;
+    padding-top: 5%;
+}
+
+#todo-container{
+    position: absolute;
+    width: 30%;
+    height: fit-content;
+    min-height: 70%;
+    background-color: white;
+    border-radius: 1%;
+    font-family: 'Tahoma';
+    padding: 1%;
+}
+
+
+#todo-container h1{
+    text-align: center;
+    display: block;
+}
+
+#todo-container input{
+    width: 75%;
+    height: 57px;
+    min-height: 20px;
+    border: #b8b8bf solid 2px;
+    border-radius: 2%;
+    font-size: 30px;
+    padding: 5px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+#add-item-button{
+    margin-left: 5%;
+    position: absolute;
+    width: 80px;
+    height: 70px;
+    border: transparent;
+    background-color: #a765e6;
+    border-radius: 5%;
+}
+
+#add-item-button:hover{
+    border: #a765e6 5px solid;
+    background-color: #b17ae6;
+    cursor: pointer;
+}
+
+#add-item-button img{
+    width: 75%;
+    height: 75%
+}
+
+#main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.item-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    background-color: #f0f0ed;
+    border-radius: 2%;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.item-container:hover #del_button{
+    background-color: #e66465;
+}
+
+
+.item-container:hover #del-img{
+    opacity: 100%;
+}
+
+.item-container:hover #edit-img{
+    opacity: 100%;
+}
+
+
+.item-container:hover #edit_button{
+    background-color: #d1d1d1;
+}
+
+#buttons{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+}
+
+#buttons button{
+    height: 100%;
+    width: 75px;
+    border-radius: 10%;
+    border: none;
+}
+
+#item_title{
+    padding-left: 10px;
+}
+
+#del-img{
+    width: 70%;
+    height: 70%;
+    opacity: 0%;
+}
+
+#edit-img{
+    width: 75%;
+    height: 70%;
+    opacity: 0%;
+}
