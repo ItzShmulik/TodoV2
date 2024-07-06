@@ -4,14 +4,24 @@ let inputValue = "";
 let items = [];
 let itemsCount = 0;
 
+const addInput = document.getElementById("add-item-input");
+
+addInput.addEventListener("keydown", (e) => {
+    inputValue = addInput.value;
+    if(e.key == "Enter" && !(inputValue == "" || inputValue == undefined)){
+        addItem(inputValue);
+    }
+});
+
 
 // Call function addItem when clicking the addItem button
 addItem_button.onclick = function(){
-    inputValue = document.getElementById('add-item-input').value;
+    inputValue = addInput.value;
     if(!(inputValue == "" || inputValue == undefined)){
         addItem(inputValue);
     }
 };
+
 
 // Function implementation of adding a new item
 function addItem(itemTitle){
